@@ -1,6 +1,5 @@
-import rediclint from '../utils/redis';
 import dbClient from '../utils/db';
-import Queue from 'bull'
+import Queue from 'bull';
 import sha1 from 'sha1';
 
 const userQueue = new Queue('userQueue');
@@ -48,3 +47,4 @@ class UsersController{
     return response.status(201).send(user)
   } 
 }
+export default UsersController;
