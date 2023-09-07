@@ -17,7 +17,7 @@ class RedisClient{
   }
 
     /**
-    * 
+    *  Rturns true if the redis connection is alive
     */
     isAlive() {
       return this.client.connected;
@@ -52,7 +52,7 @@ class RedisClient{
   }
 }
 
-const RedisClient = new RedisClient();
+const redisClient = new RedisClient();
 
-export default RedisClient;
+export default redisClient;
 
