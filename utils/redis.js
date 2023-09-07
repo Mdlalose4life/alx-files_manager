@@ -29,7 +29,7 @@ class RedisClient{
      * @returns 
      */
     async get(key) {
-      value = await this.getAsync(key)
+      const value = await this.getAsync(key)
       return value
   }
 
@@ -40,7 +40,7 @@ class RedisClient{
      * @param {*} time 
      */
     async set(key, value, time) {
-      this.client.setEx(key, value, time);
+      this.client.setex(key, value, time);
   }
 
     /**
