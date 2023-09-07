@@ -7,7 +7,7 @@ class AppController{
      * @param {*} req 
      * @param {*} res 
      */
-  static getStastus(req, res){
+  static getStatus(req, res){
     const status = {
       redis: rediclint.isAlive(),
       db: dbClient.isAlive(),
