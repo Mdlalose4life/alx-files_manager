@@ -34,8 +34,8 @@ class DBClient{
      * @returns 
      */
     async nbUsers(){
-      numberOfUsers = this.users.countDocuments();
-      return numberofUsers
+      const numberOfUsers = this.users.countDocuments();
+      return numberOfUsers;
     }
 
     /**
@@ -43,7 +43,8 @@ class DBClient{
      * @returns 
      */
     async nbFiles(){
-      return numberOfFiles = this.files.countDocuments();
+      const numberOfFiles = this.files.countDocuments();
+      return numberOfFiles;
     }
   }
   const dbClient = new DBClient();
