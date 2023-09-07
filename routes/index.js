@@ -9,11 +9,11 @@ function controllerRouting(app){
   app.use('/', router);
 
   router.get('/status', (req, res) => {
-    AppController.getStastus(req, res);
+    AppController.getStatus(req, res);
   });
 
   router.get('/stats', (req, res) => {
-    AppController.getStastus(req, res);
+    AppController.getStats(req, res);
   });
 
   router.post('/users', (req, res) => {
